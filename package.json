@@ -2,10 +2,11 @@
   "name": "blog",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "nodemon --inspect index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --inspect src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node-sass --watch src/resources/scss/app.scss src/puplic/css/app.css"
   },
   "keywords": [
     "nodejs"
@@ -14,7 +15,9 @@
   "license": "ISC",
   "dependencies": {
     "express": "4.17.1",
+    "express-handlebars": "5.1.0",
     "morgan": "1.10.0",
+    "node-sass": "9.0.0",
     "nodemon": "2.0.4"
   }
 }
